@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>JS DOM paragraph style</title>
+  <meta charset="utf-8" />
+  <title>Insert Row in a Table</title>
 </head>
 <body>
-  <p id='text'>JavaScript Exercises - w3resource</p>
-  <div>
-    <button id="jsstyle" onclick="js_style()">Style</button>
-  </div>
-
-  <script src="task3.js"></script>
+  <table id="sampleTable" border="1">
+    <tr>
+      <td>Row1 cell1</td>
+      <td>Row1 cell2</td>
+    </tr>
+    <tr>
+      <td>Row2 cell1</td>
+      <td>Row2 cell2</td>
+    </tr>
+  </table>
+  <br>
+  <input type="button" onclick="insert_Row()" value="Insert Row">
+  
+  <script src="task4.js"></script>
 </body>
 </html>
