@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Insert Row in a Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        /* Add your CSS styles here */
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 <body>
-  <table id="sampleTable" border="1">
-    <tr>
-      <td>Row1 cell1</td>
-      <td>Row1 cell2</td>
-    </tr>
-    <tr>
-      <td>Row2 cell1</td>
-      <td>Row2 cell2</td>
-    </tr>
-  </table>
-  <br>
-  <input type="button" onclick="insert_Row()" value="Insert Row">
-  
-  <script src="task4.js"></script>
+    <h1>Todo App</h1>
+    <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Add a new todo" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todoList">
+        <!-- Todos will be added here dynamically -->
+    </ul>
+
+    <script src="task6.js"></script>
 </body>
 </html>
